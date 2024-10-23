@@ -41,9 +41,9 @@ internal class BymlYamlReader
 
         if (parser.TryGetCurrentTag(out Tag tag)) {
             return tag.Suffix switch {
-                "s" or "s32" => parser.ReadScalarAsInt32(),
+                "l" or "s32" => parser.ReadScalarAsInt32(),
                 "u" or "u32" => parser.ReadScalarAsUInt32(),
-                "l" or "s64" => parser.ReadScalarAsInt64(),
+                "ll" or "s64" => parser.ReadScalarAsInt64(),
                 "ul" or "u64" => parser.ReadScalarAsUInt64(),
                 "f" or "f32" => parser.ReadScalarAsFloat(),
                 "d" or "f64" => parser.ReadScalarAsDouble(),
