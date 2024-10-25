@@ -2,10 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-	<ImplicitUsings>enable</ImplicitUsings>
-	<Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
     <InvariantGlobalization>true</InvariantGlobalization>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageLicenseFile>License.md</PackageLicenseFile>
+    <PackageVersion>1.0.1</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +20,13 @@
 
   <ItemGroup>
   	<None Include="../../Readme.md" Link="Assets\Readme.md">
+  	  <Pack>True</Pack>
+  	  <PackagePath>\</PackagePath>
+  	</None>
+  </ItemGroup>
+
+  <ItemGroup>
+  	<None Include="../../License.md" Link="Assets\License.md">
   	  <Pack>True</Pack>
   	  <PackagePath>\</PackagePath>
   	</None>
