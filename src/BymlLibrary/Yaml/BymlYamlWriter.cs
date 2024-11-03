@@ -73,7 +73,6 @@ public static class BymlYamlWriter
                 WriteDouble(ref emitter, ref formattedFloatBuffer, byml.GetDouble());
                 break;
             case BymlNodeType.Null:
-                emitter.SetTag("!n");
                 emitter.WriteNull();
                 break;
             default:
@@ -146,7 +145,6 @@ public static class BymlYamlWriter
                 WriteDouble(ref emitter, ref formattedFloatBuffer, byml.GetDouble());
                 break;
             case BymlNodeType.Null:
-                emitter.SetTag("!n");
                 emitter.WriteNull();
                 break;
             default:
